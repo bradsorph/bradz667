@@ -6,9 +6,7 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 6.0"
     }
-  
-  
-    provider "aap" {
+    aap = {
         host = "https://caap.fvz.ansible-labs.de/" 
 
         # token = "my-aap-token" # Also supportsAAP_TOKEN environment variable
