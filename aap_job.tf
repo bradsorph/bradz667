@@ -21,9 +21,5 @@ resource "aap_job" "deploy_web_site" {
   triggers = {
     "aap_job_run_timestamp":timestamp()
   }
-
-  depends_on = [
-    aap_job.webserver
-  ]
 }
 
